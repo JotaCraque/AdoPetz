@@ -23,5 +23,25 @@ function carregarRacas() {
     }
 }
 
-// Chama a função inicialmente para carregar as raças baseado na opção inicial do select animal
-carregarRacas();
+function hideHeaderOnScroll() {
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 80) {
+            header.classList.add('header-hidden'); // Adiciona a classe para esconder o header
+        } else {
+            header.classList.remove('header-hidden'); // Remove a classe para mostrar o header
+        }
+
+        lastScrollTop = scrollTop;
+    });
+}
+
+// Chamar a função assim que o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', function() {
+    hideHeaderOnScroll();
+    carregarRacas(); // Chama a função inicialmente para carregar as raças baseado na opção inicial do select animal
+});
