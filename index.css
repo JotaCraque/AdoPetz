@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: 'Outfit', cursive;
+    font-size: 18px;
+}
+
 /* Reset de margens e preenchimentos */
 body, ul {
   margin: 0px; 
