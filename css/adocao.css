@@ -1,0 +1,104 @@
+/* ###### PRIMEIRA SESSAO ####### */
+
+.primeira-sessao{
+   color: #ffffff;
+   width: 90%;
+   margin: 4% auto;
+   font-family: 'poppins',sans-serif;
+}
+
+.titulo-P-adocao{
+   font-size: 46px;
+   font-weight: 600;
+   text-align: center;
+}
+
+.texto-adocao{
+   width: 50%;
+   margin: 2% auto;
+   line-height: 1.5em;
+   text-align: center;
+   font-weight: 500;
+}
+
+
+
+
+/* ###### FORMULARIO ####### */
+
+.form-sessao{
+   background-color: #f8f8f8f8;
+   font-family: 'poppins',sans-serif;
+}
+
+.formulario{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 0 auto;
+}
+
+.titulo-form{
+   font-size: 28px;
+   font-weight: 600;
+   text-align: center;
+   padding: 4% 0;
+}
+
+.label-form{
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 1%;
+}
+
+.campo{
+   width: 95%;
+   height: 35px;
+   margin-bottom: 3%;
+   box-shadow: 1px 1px 4px #a0a0a0;
+   border: 1px solid #a0a0a0b7;
+}
+
+.campo:focus{
+   outline: 1px solid #a0a0a0;
+}
+
+.campo:focus::placeholder{
+   color: transparent;
+}
+
+.titulo-especie{
+   line-height: 1.4em;
+   margin-bottom: 2%;
+}
+
+.label-especie{
+   display: block;
+   margin-bottom: 4%;
+}
+
+.label-form-especie{
+   margin-top: 4%;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.bt-enviar{
+   width: 50%;
+   height: 30px;
+   margin: 2% auto;
+   border: none;
+   border-radius: 6px;
+   background-color: #f9a826;
+   color: #ffffff;
+   font-family: 'poppins',sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.bt-enviar:hover{
+   cursor: pointer;
+   background-color: #f8b64b;
+   transition: 450ms;
+}
+

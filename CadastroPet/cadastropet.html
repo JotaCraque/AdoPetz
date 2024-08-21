@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Animal</title>
+    <link rel="stylesheet" href="css/cadastropet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+    <div class="navbar-main">
+        <div class="logo"><img src="Images/Adopt 75x75.png" alt=""></div>
+        <div class="conta"><a href="/">Conta</a></div>
+    </div>
+</header>
+
+<form action="upload.php" method="post" enctype="multipart/form-data" class="container">
+    <h2>Insira os dados do animal.</h2>
+    <p>Anúncios com mais informações alcançam mais pessoas.</p>
+    <div class="aviso">
+        <p>Os itens com (*) são obrigatórios</p>
+    </div>
+    <h3>Animal*</h3>
+    <select name="animal" id="animal" onchange="carregarRacas()">
+        <option value="Gato">Gato</option>
+        <option value="Cachorro">Cachorro</option>
+    </select>
+    <h3>Título*</h3>
+    <input type="text" name="titulo" id="titulo" placeholder="Exemplo: Gato Persa Filhote" required>
+    <h3>Imagens*</h3>
+    <input type="file" name="images[]" accept="image/*" multiple required>
+    <h3>Descrição</h3>
+    <textarea id="descricao" name="descricao" placeholder="Escreva aqui por quê está anunciando este animal e algumas informações adicionais que facilitem a venda"></textarea>
+    <h3>Idade*</h3>
+    <input type="text" name="idade" id="idade" placeholder="Idade do seu Animal" required>
+    <h3>Raça*</h3>
+    <select name="raca" id="raca">
+        <!-- Opções de raças serão carregadas dinamicamente via JavaScript -->
+    </select>
+    <h3>Coloração</h3>
+    <input type="text" name="coloracao" id="coloracao" placeholder="A cor predominante de seu bichinho">
+    <h3>Vacinado*</h3>
+    <div>
+        <input type="radio" id="vacinadoSim" name="vacinado" value="Sim" required checked>
+        <label for="vacinadoSim">Sim</label>
+        <input type="radio" id="vacinadoNao" name="vacinado" value="Não">
+        <label for="vacinadoNao">Não</label>
+    </div>
+
+    <input type="submit" value="Registrar Anúncio">
+</form>
+
+<script src="js/carregarRacas.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        hideHeaderOnScroll();
+        carregarRacas();
+    });
+</script>
+
+</body>
+</html>

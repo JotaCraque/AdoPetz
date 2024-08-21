@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot em Modal</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <!-- Botão para abrir o chat -->
+    <button class="open-chat-btn" onclick="openChat()">Abrir Chat</button>
+
+    <!-- Modal com o chat -->
+    <div class="modal" id="chat-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Chatbot</h2>
+                <button class="close-btn" onclick="closeChat()">×</button>
+            </div>
+            <div class="faq-list" id="faq-list"></div>
+            <div class="chat-box" id="chat-box"></div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/javabot.js"></script>
+
+</body>
+</html>

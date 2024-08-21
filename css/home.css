@@ -1,0 +1,114 @@
+/* ####### INFO ######## */
+
+.info{
+   width: 90%;
+   margin: 5% auto;
+}
+
+.container-info{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.conteudo-texto-info{
+   width: 40%;
+   font-family: 'poppins',sans-serif;
+   color: rgba(255, 255, 255, 0.856);
+}
+
+.titulo-P-info{
+   font-size: 46px;
+   font-weight: 600;
+   margin-bottom: 4%;
+}
+
+.texto-info{
+   font-size: 16px;
+   color: #ffffff;
+   font-weight: 500;
+   line-height: 1.5em;
+}
+
+.ilustracao-info{
+   width: 500px;
+   height: 300px;
+}
+
+
+
+
+/* ####### ANIMAIS ######## */
+
+.animais{
+   background-color: #f0f0f0;
+   font-family: 'poppins',sans-serif;
+   padding: 5% 0;
+   height: auto;
+}
+
+.titulo-P-animais{
+   text-align: center;
+   font-size: 38px;
+   font-weight: 600;
+   color: #201c1c;
+}
+
+.animais .container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 4% auto 0;
+   row-gap: 1.7em;
+}
+
+.card-animais{
+   background-color: #ffffff;
+   border-radius: 6px;
+   box-shadow: 1px 1px 4px #4747476e;
+   display: flex;
+   flex-direction: column;
+   width: auto;
+   height: 300px;
+}
+
+.card-animais:hover{
+   cursor: pointer;
+}
+
+.card-animais img{
+   width: 230px;
+   height: 220px;
+   border-radius: 6px 6px 0 0;
+}
+
+.card-animais img{
+   background-image: url(../Conteudo/construction-tool.svg);
+   background-size: 40%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.card-animais img:hover{
+   filter: brightness(1.1);
+   transition: 250ms;
+}
+
+.titulo-card{
+   font-weight: 500;
+   margin: 7% 3% 2%;
+}
+
+.idade-card{
+   font-size: 15px;
+   color: #595959;
+   margin: 0 3%;
+}
+
+a{
+   text-decoration: none;
+}
+
+
+

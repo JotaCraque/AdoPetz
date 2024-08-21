@@ -1,0 +1,70 @@
+body {
+   background-color: #0011a8;
+
+}
+
+.cabecalho {
+   width: 90%;
+   margin: 3% auto;
+   color: #ffffff;
+   font-family: 'Poppins', sans-serif;
+   position: relative;
+}
+
+.container-cabecalho {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 10px;
+}
+
+.img-cabecalho {
+   width: 70px;
+   height: 70px;
+   
+}
+
+.texto-logo {
+   font-size: 22px;
+   font-weight: 600;
+}
+
+.menu-nav {
+   width: 25%;
+}
+
+.lista-menu-nav {
+   display: flex;
+   justify-content: space-between;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+a {
+   position: relative;
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.856);
+   letter-spacing: 0.5px;
+   padding: 0 2px;
+}
+
+a:after {
+   content: "";
+   position: absolute;
+   background-color: rgb(255, 255, 255);
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -2px;
+   transition: 0.12s;
+}
+
+a:hover:after {
+   width: 100%;
+}

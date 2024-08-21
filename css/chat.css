@@ -1,0 +1,138 @@
+/* Botão para abrir o chat */
+.open-chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
+
+/* Imagem do ícone do chat */
+.chat-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Estilos para o conteúdo do modal */
+.modal-content {
+    width: 400px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para o cabeçalho do modal */
+.modal-header {
+    padding: 10px;
+    background:#0011a8;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.modal-header .close-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para a lista de perguntas frequentes */
+.faq-list {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+    overflow-y: auto;
+    max-height: 150px; /* Define uma altura máxima para a lista FAQ */
+}
+
+/* Estilos para os itens da FAQ */
+.faq-item {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+    background: #e0e0e0;
+}
+
+.faq-item:hover {
+    background: #d0d0d0;
+}
+
+/* Estilos para a caixa de chat */
+.chat-box {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para o container de entrada */
+.input-container {
+    display: flex;
+    padding: 10px;
+}
+
+/* Estilos para o campo de entrada */
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilos para o botão de envio */
+.input-container button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #0011a8;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para as mensagens */
+.message {
+    margin: 5px 0;
+}
+
+.user {
+    text-align: right;
+    font-weight: bold;
+}
+
+.bot {
+    text-align: left;
+    color: #555;
+}

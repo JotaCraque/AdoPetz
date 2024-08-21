@@ -1,0 +1,11 @@
+.rodape{
+   height: 60px;
+}
+
+.texto-rodape{
+   color: #ffffff;
+   font-family: 'poppins',sans-serif;
+   text-align: center;
+   font-size: 15px;
+   padding-top: 25px;
+}

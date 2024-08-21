@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Adote um amigo</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="shortcut icon" href="Images/Adopt 500x500.png" type="image/x-icon">
+   
+   <!-- LINKS CSS -->
+   <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/home.css">
+   <link rel="stylesheet" href="css/rodape.css">
+   <link rel="stylesheet" href="css/responsivo.css">
+   <link rel="stylesheet" href="css/chat.css">
+   <link rel="stylesheet" href="stylespets.css">
+   
+   <!-- LINKS FONTES -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
+   <script src="js/index.js" defer></script>
+</head>
+<body>
+   <header class="cabecalho">
+      <div class="container-cabecalho">
+         <div class="logo">
+            <img class="img-cabecalho" src="Images/Adopt 500x500.png" alt="Imagem de uma pequena pata de cachorro com quatro dedos em cor preta">
+            <h2 class="texto-logo">AdoPetz</h2>
+         </div>         
+         <nav class="menu-nav">
+            <ul class="lista-menu-nav">
+               <li class="item-menu-nav"> <a href="#">Início</a></li>
+               <li class="item-menu-nav"> <a href="CadastroPet/pets.html">Adoção</a></li>
+               <li class="item-menu-nav"> <a href="CadastroCliente/login.html">Login</a></li>
+               <li class="item-menu-nav"> <a href="sobre-nos.html">Sobre Nós</a></li>
+            </ul>
+         </nav>
+      </div>   
+   </header>
+   
+   <main class="conteudo-principal">  
+      <section class="info">
+         <div class="container-info">
+            <div class="conteudo-texto-info">
+               <h1 class="titulo-P-info">Conheça seu novo amigo!</h1>
+               <p class="texto-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium erat nulla, eget finibus libero convallis vel. Cras ornare mauris sed imperdiet eleifend. Donec eu ultrices nisl. Maecenas pulvinar odio sed urna fermentum lobortis.</p>
+            </div>
+            <img class="ilustracao-info" src="Images/ilustracaoadocao.svg" alt="Um desenho de um cachorro preto com detalhes em laranja olhando em direção a tela">
+         </div>
+      </section>
+      
+      <section class="animais">
+         <h2 class="titulo-P-animais">Conheça Nossos Animais</h2>
+         <div class="container">
+            <a href="perfil-dog.html" aria-label="Perfil de Gente boa">
+               <div class="card-animais">
+                  <img src="Images/dog B.jpg" alt="Foto de um cachorro">
+                  <h3 class="titulo-card">Gente boa</h3>
+                  <p class="idade-card">2 anos</p>
+               </div>   
+            </a>
+         </div>
+      </section>
+   </main>
+   
+   <footer class="rodape">
+      <h4 class="texto-rodape"> AdoPetz &copy; Todos os direitos reservados</h4>
+   </footer>
+   
+   <!-- Botão para abrir o chat -->
+   <button class="open-chat-btn" onclick="openChat()">
+      <img src="Images/chatbot.png" alt="Abrir Chat" class="chat-icon">
+   </button>
+
+   <!-- Modal com o chat -->
+   <div class="modal" id="chat-modal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h2>Selecione sua pergunta.</h2>
+            <button class="close-btn" onclick="closeChat()">×</button>
+         </div>
+         <div class="faq-list" id="faq-list">
+            <!-- Perguntas frequentes serão inseridas aqui pelo JavaScript -->
+         </div>
+         <div class="chat-box" id="chat-box"></div>
+         <div class="input-container">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+            <button onclick="sendMessage()">Enviar</button>
+         </div>
+      </div>
+   </div>
+   <script src="js/javabot.js" defer></script>
+   
+</body>
+</html>

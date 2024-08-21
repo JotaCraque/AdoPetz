@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', cursive;
+}
+
+header {
+    background-color: #011C40;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.3s; /* Mantém a transição suave ao alterar 'top' */
+}
+
+.navbar-main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #011C40;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+}
+
+.conta {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.conta a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1D64F2;
+    padding-top: 100px; /* Ajusta o padding para evitar que o conteúdo fique sob o header fixo */
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    color: #F2EED8;
+    position: relative;
+    text-align: center;
+}
+
+.container input,
+.container textarea,
+.container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.container input[type="radio"],
+.container input[type="checkbox"] {
+    width: auto;
+}
+
+.container input:focus,
+.container textarea:focus,
+.container select:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container .aviso {
+    margin-bottom: 20px;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(212, 212, 212);
+}
+
+.container h2 {
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 45px;
+}
+
+.container h3 {
+    text-align: left; /* Alinha os h3 à esquerda */
+    margin-left: 20px; /* Adiciona margem à esquerda para ajustar o alinhamento */
+    margin-top: 20px;
+}
+
+/* Classe para esconder o header */
+.header-hidden {
+    top: -80px; /* Posição para esconder o cabeçalho */
+}
