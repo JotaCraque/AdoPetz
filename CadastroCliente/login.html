@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"> 
+</head>
+<body>
+    <a href="../index.html">
+        <img id="logo" src="Images/Adopt 500x500.png" alt="Logo da Empresa"> 
+    </a>
+    <!-- Formulário de login -->
+    <form action="jsp/testlogin.jsp" method="post"> 
+        <div class="container">
+            <div class="login"> 
+                <h1>Login</h1> 
+                <p>Estamos felizes em te ver novamente.</p> 
+                <input type="email" id="email" name="email" placeholder="E-mail" required> 
+                <input type="password" id="senha" name="senha" placeholder="Senha" required> 
+            </div>
+            <div class="ckboxarsenha"> 
+                <label><input type="checkbox" id="lembrar" name="lembrar"> Lembre-me</label> 
+            </div>        
+            <input class="inputSubmit" type="submit" value="Entrar"> 
+            <br>
+            <div class="login"> 
+                <a href="cadastro.html">Crie sua conta</a> 
+                <a href="redefinirsenha.html">Esqueceu a senha?</a>
+            </div>
+        </div>       
+    </form>
+</body>
+</html>
